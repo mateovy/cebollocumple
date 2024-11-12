@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños Cebollo</title>
+    <script src="cebollo.js"></script>
+</head>
+<style>
+    html {
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    #splash {
+  /* (A1) FULLSCREEN */
+  position: fixed; top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+
+  /* (A2) CENTER */
+  display: flex;
+  align-items: center; justify-content: center;
+
+  /* (A3) COSMETICS */
+  font-size: 24px;
+  color: #fff; background: #000;
+    }
+
+/* (A4) TO HIDE THE SPLASH SCREEN */
+    #splash.hide {
+  opacity: 0; visibility: hidden;
+  transition: all 1s;
+    }
+    }
+    h1{
+        text-align: right;
+        margin: 0;
+    }
+    #titulo{
+        font-size: 90px;
+        font-family: fantasy;
+        background-color: aqua;
+        text-align: center;
+    }
+    p{
+
+        font-size:50px;
+        font-family: cursive;
+        background-color: aqua;
+        text-align: center;
+    }
+    #principal{
+        position: relative;
+        left: 100px;
+    }
+    img{
+        border: 10px solid white;
+        position: relative;
+        left: 600px;
+    }
+
+    #gif1{
+        position:absolute;
+        right: 600px;
+        top: 500px;
+    }
+
+    #gif2{
+        position: absolute;
+        right: 1900px;
+        top: 900px;
+        height: 300px;
+        width: 300px;
+    }
+
+    #cebollo1{
+        position: relative;
+        top: 80px;
+        right: 0px;
+        left: 20px;
+        bottom: 0px
+    }
+
+</style>
+<body>
+     <!-- (PART A) SPLASH SCREEN -->
+     <div id="splash" onclick="start()"><h1>Haz click para empezar</h1>
+        <img src="IMG20211022150415.jpg" alt="" id="cebollo1" >
+        </div>
+
+     <!-- (PART B) BGM -->
+     <audio id="bgm" src="Dario Gomez - Corazonada [Official Audio].mp3" loop></audio>
+ 
+     <!-- (PART C) MAIN CONTENT -->
+    <div id="principal">
+        <h1 id="titulo">Feliz Cumpleaños Cebollo</h1>
+        <img src="IMG-20220506-WA0029.jpg" alt="imagen de Cebollo">
+        <p>Que la santisima virgen me lo acompañe y me lo proteja en este dia tan especial</p>
+    </div>
+    <div id="gif1">
+        <img src="d962a451-3e5f-4466-b2e5-02473fb60550.webp" alt="chuchas culiando">
+    </div>
+    <div id="gif2">
+        <img src="91af6574-7a77-4c39-a80f-2458e012a639.webp" alt="bebé bailando" id="Cebollo">
+    </div>
+    
+    
+</body>
+</html>
